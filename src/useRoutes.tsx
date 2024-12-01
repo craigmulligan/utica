@@ -26,7 +26,7 @@ export function useRoutes(stationId: string, refreshInterval: number) {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    let intervalId: NodeJS.Timeout;
+    let intervalId: number;
 
     const fetchStopData = async () => {
       try {
